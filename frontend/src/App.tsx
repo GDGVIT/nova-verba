@@ -9,7 +9,6 @@ const App = () => {
 
   const hook = () => {
     const loggedInStatus = localStorage.getItem('loggedIn')
-    console.log(loggedInStatus)
     if (loggedInStatus === 'true') {
       setLoggedIn(() => true)
     } else {
