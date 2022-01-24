@@ -18,3 +18,12 @@ body {
   text-align: center;
   font-weight: 700;
 }
+
+.overlay {
+  background-color: #f2f7f8;
+  width: 480px;
+  height: 300px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
