@@ -38,7 +38,7 @@ const Word = ({ uiType, wordName, wordMeaning }: BookProps) => {
       )
     default:
       return (
-        <div onClick={()=> updateUiState(1)}>{wordName}</div>
+        <div className='word-row' onClick={()=> updateUiState(1)}>{wordName}</div>
       )
   }
 }

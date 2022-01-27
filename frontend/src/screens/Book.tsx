@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 
-import Header from '../components/Header'
 import Word from '../components/Word'
 
 interface BookProps {
@@ -28,16 +27,15 @@ const Book = ({ uiType, bookName, wordCount=0 }: BookProps) => {
     default:
       return (
         <div className='overlay'>
-          <Header />
-          <main className='screen'>
+          <main className='screen book-screen'>
             <header className='books-header book-header'>
               <span className='book-title' >{bookName}</span>
-              <button className='book-back-button' onClick={() => updateUiState(0)}>Back</button>
+              <button className='book-back-button' onClick={() => updateUiState(0)}>Go Back</button>
             </header>
             <div className='sort'>
               Sort: A to Z
             </div>
-            <div>
+            <div className='book-words'>
               <Word uiType={2} wordName='Good' wordMeaning='This is good stuff'/>
               <Word uiType={2} wordName='Good' wordMeaning='This is good stuff'/>
               <Word uiType={2} wordName='Good' wordMeaning='This is good stuff'/>

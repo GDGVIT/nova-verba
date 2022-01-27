@@ -3,7 +3,8 @@ import React, { useState, useEffect } from 'react'
 import Word from '../components/Word'
 
 interface SearchResultsProps {
-  word: string
+  word: string,
+  getBackFunction: (arg0: number) => void
 }
 
 interface SearchResultInt {
@@ -12,7 +13,7 @@ interface SearchResultInt {
   wordMeaning: string
 }
 
-const SearchResults = ({ word }: SearchResultsProps) => {
+const SearchResults = ({ word, getBackFunction }: SearchResultsProps) => {
   const [searchResults, setSearchResults] = useState<SearchResultInt[]>([])
 
   const fetchSearchResults = () => {
@@ -28,8 +29,9 @@ const SearchResults = ({ word }: SearchResultsProps) => {
   useEffect(fetchSearchResults, [])
   return (
     <div>
+      <button onClick={() => getBackFunction(0)}>Go back</button>
       <div>
-        Search results ffor
+        Search results for
       </div>
       <div>
         "{word}"

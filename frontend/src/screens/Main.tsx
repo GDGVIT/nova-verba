@@ -20,6 +20,7 @@ const Main = () => {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
+    updateCurrentScreen(2)
   }
 
   const [currentScreen, setCurrentScreen] = useState(0)
@@ -68,7 +69,7 @@ const Main = () => {
         <Books getBackFunction={updateCurrentScreen} />
       )}
       {currentScreen === 2 && (
-        <SearchResults word={searchQuery} />
+        <SearchResults word={searchQuery} getBackFunction={updateCurrentScreen} />
       )}
     </>
   )
