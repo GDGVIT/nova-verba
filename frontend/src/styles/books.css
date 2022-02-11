@@ -1,0 +1,80 @@
+.books-header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+
+.book-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-left: 1.5rem;
+}
+
+.book-back-button {
+  background-color: #fff;
+  color: #000;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  border: 0;
+  border-radius: 9px;
+  padding: 0 1rem;
+  margin-right: 1.5rem;
+  cursor: pointer;
+}
+
+#books-cards {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  margin: 1.5rem 0 0.5rem 1.5rem;
+  gap: 1.5rem;
+}
+
+.book-card {
+  background-color: #fff;
+  color: #000;
+  border: 0;
+  border-radius: 9px;
+  height: 6rem;
+  width: 9rem;
+  padding: 0.5rem 0.5rem 1rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.book-card-name {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.sort {
+  width: 100%;
+  padding: 0 0.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+
+}
+
+.book-words {
+  display: flex;
+  flex-direction: column;
+}
+
+.word-row {
+  width: 100%;
+  padding-top: 1.2rem;
+  padding-left: 1.2rem;
+  padding-bottom: 0.5rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.13);
+  margin-top: 0.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+}
