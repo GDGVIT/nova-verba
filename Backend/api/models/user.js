@@ -2,11 +2,22 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const userSchema = Schema({
-    username: {
+    userName: {
         type: String,
-        required: true,
-        min: 6,
-        max: 15
+    },
+    email: {
+        type: String,
+    },
+    userProfileUrl: {
+        type: String,
+    },
+    book: {
+        type: Array,
+        default: []
+    },
+    counter: {
+        type: Number,
+        default: 0
     }
 });
 
