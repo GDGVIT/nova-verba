@@ -7,6 +7,7 @@
     "firebase": "^9.6.7",
     "firebase-admin": "^10.0.2",
     "googleapis": "^89.0.0",
+    "heroku": "^7.60.1",
     "jsonwebtoken": "^8.5.1",
     "lodash": "^4.17.21",
     "logger": "^0.0.1",
