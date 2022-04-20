@@ -55,3 +55,5 @@ app.use("/user", require("./api/routers/user"));
 app.listen(port, () => {
     console.log('Server Up and Running at Port')
 })
+
+module.exports = app;
