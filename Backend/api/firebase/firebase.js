@@ -16,8 +16,6 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-admin.initializeApp({
-    credential: admin.credential.cert(firebaseConfig)
-  })
-  
-  module.exports = admin
+admin.initializeApp(firebaseConfig);
+
+module.exports = admin
