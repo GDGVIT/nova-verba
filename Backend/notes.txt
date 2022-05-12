@@ -1,0 +1,19 @@
+search api parameters :{word, language}
+
+streak api
+1. weekly
+2. highest streak
+
+when a day is missed streak is reduced is 0
+
+word of the day random
+
+Books section i.e. a list of words
+fucntions add, delete
+when user clicks on a book when called a book must return the no. of words in it
+
+{book name, no. of words}
+
+global cluster custom dictionary
+
+when someone calls it if it exits in the dict then just fetch it else add it to the custom global dict 
